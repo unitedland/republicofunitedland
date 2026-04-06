@@ -1,0 +1,43 @@
+{
+  "name": "Achievement",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string",
+      "description": "Email of the user who earned this achievement"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "game_master",
+        "mint_expert",
+        "lucky_spinner",
+        "high_roller",
+        "speed_demon",
+        "trivia_champion"
+      ],
+      "description": "Type of achievement"
+    },
+    "title": {
+      "type": "string",
+      "description": "Achievement title"
+    },
+    "description": {
+      "type": "string",
+      "description": "How the achievement was earned"
+    },
+    "icon": {
+      "type": "string",
+      "description": "Icon identifier"
+    },
+    "game": {
+      "type": "string",
+      "description": "Game associated with achievement"
+    }
+  },
+  "required": [
+    "user_email",
+    "type",
+    "title"
+  ]
+}
