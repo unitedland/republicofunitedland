@@ -1,0 +1,27 @@
+{
+  "name": "ChatMessage",
+  "type": "object",
+  "properties": {
+    "author_email": {
+      "type": "string",
+      "description": "Email of the sender"
+    },
+    "author_name": {
+      "type": "string",
+      "description": "Name of the sender"
+    },
+    "content": {
+      "type": "string",
+      "description": "Message content"
+    },
+    "image_url": {
+      "type": "string",
+      "description": "Optional image attached to message"
+    }
+  },
+  "required": [
+    "author_email",
+    "author_name",
+    "content"
+  ]
+}
