@@ -1,0 +1,44 @@
+{
+  "name": "Citizen",
+  "type": "object",
+  "properties": {
+    "full_name": {
+      "type": "string",
+      "description": "Full legal name of the citizen"
+    },
+    "email": {
+      "type": "string",
+      "description": "Contact email"
+    },
+    "country_of_origin": {
+      "type": "string",
+      "description": "Country of birth/current residence"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "approved",
+        "honorary",
+        "rejected"
+      ],
+      "default": "pending"
+    },
+    "citizen_id": {
+      "type": "string",
+      "description": "Unique citizen identification number"
+    },
+    "date_of_citizenship": {
+      "type": "string",
+      "format": "date"
+    },
+    "message": {
+      "type": "string",
+      "description": "Why they want to become a citizen"
+    }
+  },
+  "required": [
+    "full_name",
+    "email"
+  ]
+}
